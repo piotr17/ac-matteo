@@ -27,6 +27,7 @@
         "eslint": "^5.4.0",
         "fullpage.js": "^3.0.2",
         "imagemin-cli": "^3.0.0",
+        "lightbox2": "^2.10.0",
         "node-sass": "^4.9.3",
         "onchange": "^4.1.0",
         "packery": "^2.1.2",
