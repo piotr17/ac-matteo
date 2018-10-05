@@ -2,10 +2,41 @@
         @import 'palette';
         @import 'typo';
         @import url('https://fonts.googleapis.com/css?family=Lato:300|Rufina:700');
+        @import 'offcanvas';
         $font-stack-h:'Rufina';
         $font-stack-p:'Lato',
         sans-serif;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: $font-stack-h;
+        }
+        
         body {
             font-family: $font-stack-p;
             color: $color-primary-1
+        }
+        
+        article {
+            height: 100vh;
+        }
+        
+        footer {
+            color: #FFFFFF;
+            background-color: #2699FB;
+        }
+        
+        .grid-item {
+            width: 125px;
+            height: 50px;
+            background-color: #2699FB;
+        }
+        
+        .grid-item--width2 {
+            width: 250px;
+            height: 50px;
+            background-color: #2699FB;
         }

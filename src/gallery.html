@@ -81,21 +81,35 @@
                 </form>
             </div>
         </section>
-        <main class="row h-100 align-items-center m-5" style="background-color: rgb(193, 218, 236)">
-            <div class="col-12 text-center">
-                <h2>Big Title <br><small> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quisquam</small></h2>
-                <div class="col align-self-end">
-                    <img src="https://placehold.it/50x50" alt="" srcset="">
-                    <img src="https://placehold.it/50x50" alt="" srcset="">
-                    <img src="https://placehold.it/50x50" alt="" srcset="">
-                    <img src="https://placehold.it/50x50" alt="" srcset="">
+        <main class="row h-100 align-items-stretch m-5" style="background-color: rgb(193, 218, 236)">
+            <div class="col-12 text-center d-flex flex-column justify-content-between p-5">
+                <h2>Big Title</h2>
+                <div class="grid">
+                    <div class="grid-item"></div>
+                    <div class="grid-item grid-item--width2"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item grid-item--width2"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item grid-item--width2"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item grid-item--width2"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item grid-item--width2"></div>
+                    <div class="grid-item"></div>
                 </div>
             </div>
-
         </main>
+        <footer class="p-5">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam quam voluptas blanditiis recusandae exercitationem fugiat error vel similique? Maiores nemo vitae alias quas ea odit iusto impedit deleniti aut!</p>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="./assets/js/vendor/packery.pkgd.min.js"></script>
     </article>
     <script>
         $(function() {
@@ -105,6 +119,13 @@
                 $('.offcanvas-collapse').toggleClass('open')
             })
         })
+    </script>
+    <script>
+        $('.grid').packery({
+            // options
+            itemSelector: '.grid-item',
+            gutter: 10
+        });
     </script>
 </body>
 

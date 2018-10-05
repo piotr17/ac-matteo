@@ -1,0 +1,27 @@
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent scroll on narrow devices */
+}
+
+.offcanvas-collapse {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left, visibility;
+    z-index: 9999;
+}
+
+.offcanvas-collapse.open {
+    left: 50%;
+    visibility: visible;
+}
